@@ -1,0 +1,253 @@
+{
+  "dataProduct":[
+    {
+      "id":1,
+      "name":"Hydrangea",
+      "img":"./images/khong-tu-cau/kong-tuc-cau (2).jpg",
+      "brand":"floweringShrubs",
+      "quantily":200,
+      "price":"50"  
+    },
+    {
+      "id":2,
+      "name":"Portulaca_Grandiflora",
+      "img":"./images/hoa-10-gio/hoa-10-gio (3).jpg",
+      "brand":"floweringShrubs",
+      "quantily":300,
+      "price":"1"  
+    },
+    {
+      "id":3,
+      "name":"Laurel",
+      "img":"./images/caay-nguyet-que/cay-nguyet-que (2).jpg",
+      "brand":"floweringShrubs",
+      "quantily":400,
+      "price":"3"  
+    },
+    {
+      "id":4,
+      "name":"Bromeliad",
+      "img":"./images/dua_canh1/dua_canh.jpg",
+      "brand":"floweringShrubs",
+      "quantily":100,
+      "price":"5"  
+    },
+    {
+      "id":5,
+      "name":"Snowflake_Tree",
+      "img":"./images/hoa-bong-tuyet/hoa-bong-tuyet (4).jpg",
+
+      "brand":"floweringShrubs",
+      "quantily":50,
+      "price":"4"  
+    },
+    {
+      "id":6,
+      "name":"Gomphrena",
+      "img":"./images/cuc-bach-nhat/cau-bach-nhat (5).jpg",
+      "brand":"floweringShrubs",
+      "quantily":60,
+      "price":"1"  
+    },
+    {
+      "id":7,
+      "name":"Mexican_Petunia",
+      "img":"./images/hoa-dua/hoa-dua-can (1).jpg",
+      "brand":"floweringShrubs",
+      "quantily":40,
+      "price":"10"  
+    },
+    {
+      "id":8,
+      "name":"Coconut",
+      "img":"./images/hoa-dua/hoa-dua-can (3).jpg",
+      "brand":"floweringShrubs",
+      "quantily":75,
+      "price":"4"  
+    },
+    {
+      "id":9,
+      "name":"Gerbera_Flower",
+      "img":"./images/hoa-dong-tien/hoa-dong-tien (3).jpg",
+      "brand":"floweringShrubs",
+      "quantily":46,
+      "price":"5"  
+    },
+    {
+      "id":10,
+      "name":"Rose_Flower",
+      "img":"./images/hoa-hong/hoa-hong (4).jpg",
+      "brand":"floweringShrubs",
+      "quantily":79,
+      "price":"50"  
+    },
+    {
+      "id":11,
+      "name":" Lantana_Camara", 
+      "img":"./images/hoa-ngu-sac/ho-ngu-sac (4).jpg",
+      "brand":"floweringShrubs",
+      "quantily":90,
+      "price":"1"  
+    },
+    {
+      "id":12,
+      "name":"Snowfake_Jasmine",
+      "img":"./images/mai-van-phuc/mai-van-phuc.png",
+      "brand":"floweringShrubs",
+      "quantily":40,
+      "price":"3"  
+    },
+
+
+
+    {
+      "id":13,
+      "name":"Pachia_Aquatica ",
+      "img":"./images/indoor/kim_ngan/kim_ngan.jpg",
+      "brand":"InDoor",
+      "quantily":20,
+      "price":"12"  
+    },
+    {
+      "id":14,
+      "name":"Zamioculcas_Zamiifolia ",
+      "img":"./images/indoor/kim_tien/kim_tien.jpg",
+      "brand":"InDoor",
+      "quantily":100,
+      "price":"5"  
+    },
+    {
+      "id":15,
+      "name":"Kalanchoe_Pinnata",
+      "img":"./images/indoor/song_doi/song_doi.jpg",
+      "brand":"InDoor",
+      "quantily":30,
+      "price":"5"  
+    },
+    {
+      "id":16,
+      "name":"Cedar_Bonsai ",
+      "img":"./images/indoor/tuyet_tung/tuyet_tung.jpg",
+      "brand":"InDoor",
+      "quantily":60,
+      "price":"5"  
+    },
+    {
+      "id":17,
+      "name":"Euphorbia_Pulcherrima",
+      "img":"./images/indoor/trang_nguyen/trang_nguyen.jpg",
+      "brand":"InDoor",
+      "quantily":78,
+      "price":"7"  
+    },
+    {
+      "id":18,
+      "name":"Chlorophytum_Bichetii ",
+      "img":"./images/indoor/co_lan_chi/lan_chi.jpg",
+      "brand":"InDoor",
+      "quantily":90,
+      "price":"3"  
+    },
+    {
+      "id":19,
+      "name":"Fern",
+      "img":"./images/indoor/duong_si/duong_si.jpg",
+      "brand":"InDoor",
+      "quantily":23,
+      "price":"1"  
+    },
+    {
+      "id":20,
+      "name":"Clivia_Miniata ",
+      "img":"./images/indoor/lan/lan.jpg",
+      "brand":"InDoor",
+      "quantily":15,
+      "price":"15"  
+    },
+    {
+      "id":21,
+      "name":" Cupressus_macrocarpa",
+      "img":"./images/indoor/tung_thom/tung.jpg",
+      "brand":"InDoor",
+      "quantily":14,
+      "price":"5"  
+    },
+    {
+      "id":22,
+      "name":"Epipremnum_aureum",
+      "img":"./images/indoor/trau_ba/trau_ba.png",
+      "brand":"InDoor",
+      "quantily":55,
+      "price":"10"  
+    },
+
+
+
+    {
+      "id":23,
+      "name":"Kalanchoe_pinnata",
+      "img":"./images/Succulent/hoa_bong.jpeg",
+      "brand":"Succulent",
+      "quantily":78,
+      "price":"2"  
+    },
+    {
+      "id":24,
+      "name":"Snake_Plant",
+      "img":"./images/Succulent/luoi_ho_nuoc.jpeg",
+      "brand":"Succulent",
+      "quantily":95,
+      "price":"10"  
+    },
+    {
+      "id":25,
+      "name":"Zebra_Cactus",
+      "img":"./images/Succulent/luoi_ho.jpeg",
+      "brand":"Succulent",
+      "quantily":23,
+      "price":"19"  
+    },
+    {
+      "id":26,
+      "name":"Lithops",
+      "img":"./images/Succulent/lithops.jpg",
+      "brand":"Succulent",
+      "quantily":85,
+      "price":"15"  
+    },
+    {
+      "id":27,
+      "name":"VEra",
+      "img":"./images/Succulent/nha_dam.jpeg",
+      "brand":"Succulent",
+      "quantily":73,
+      "price":"2"  
+    },
+    {
+      "id":28,
+      "name":"succulent",
+      "img":"./images/Succulent/sen_da.jpeg",
+      "brand":"Succulent",
+      "quantily":91,
+      "price":"1"  
+    },
+    {
+      "id":29,
+      "name":"succulent",
+      "img":"./images/Succulent/sen_da_ngoc.jpeg",
+      "brand":"Succulent",
+      "quantily":82,
+      "price":"100"  
+    },
+    {
+      "id":29,
+      "name":"succulent",
+      "img":"./images/Succulent/sen_da_nhung.jpeg",
+      "brand":"Succulent",
+      "quantily":100,
+      "price":"10"  
+    }
+    
+
+  ]
+}

@@ -1,0 +1,57 @@
+<div class="container-login" ng-controller="logCtrl">
+    <div class="bg-shop"></div>
+
+    <div class="modal-container">
+        <div class="bg-shop"></div>
+        <!-- <div class="modal-bg-heading"></div> -->
+        <form action="" id="logform">
+
+
+            <button class="modal-close ">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2 class="modal-title">
+                SIGN IN
+            </h2>
+
+            <div class="modal-input">
+                <input class="modal-input-inner" type="email" required placeholder="Email address">
+
+                <input class="modal-input-inner" type="password" required placeholder="Password">
+            </div>
+
+            <div class="modal-remember">
+                <label class="modal-remember-label" for="">Remember me <a href="">Forgot password ?</a> </label>
+                <input type="checkbox" checked>
+
+
+            </div>
+
+            <button class="modal-btn-signin">LOGN IN</button>
+
+            <div class="modal-footer">
+                Not a member ? <a href="">Register</a> or sign up with
+            </div>
+
+            <div class="modal-social">
+                <i class="modal-social-icon fa-brands fa-facebook"></i>
+                <i class="modal-social-icon fa-brands fa-google"></i>
+                <i class="modal-social-icon fa-brands fa-github"></i>
+                <i class="modal-social-icon fa-brands fa-twitter"></i>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("logform").onsubmit = function (e) {
+            e.preventDefault();
+            alert("Hello India")
+
+
+        }
+
+    </script>
+
+
+</div>

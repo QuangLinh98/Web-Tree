@@ -1,0 +1,145 @@
+<div ng-controller="cartCtrl">
+    <div ng-controller="cartCtrl">
+        <div class="banner">
+
+            <img src="./images/546b10443c7eaf4a392113d6c7fcb6f2.jpg" alt="" class="baner-img">
+            <h1 class="baner-head">Our Products</h1>
+        </div>
+        <div class="container">
+            <div class="cart-detail">
+
+                <div class="wd-haft s-full-width" ng-show="checkout">
+                    <div class="cart-card">
+                        <ul class="cart-list_head">
+                            <li class="cart-item__product pd-left"> Product</li>
+                            <li class="cart-item">Quanttily</li>
+                            <li class="cart-item active-cart">Price</li>
+                            <li class="cart-item active-cart">Total</li>
+                        </ul>
+                    </div>
+                    <div class="cart-card" ng-repeat="item in listCart track by $index" ng-init="item.amount = 1">
+                        <ul class="cart-list">
+                            <li class="cart-item__product">
+                                <img src="{{item.img}}" alt="" />
+                                <div class="item-head">
+                                    <span>{{item.name}}</span>
+                                    <p>{{item.price}} * {{item.amount}}</p>
+                                    <a class="cart-item_link" ng-click="removeItem(item)">Remove</a>
+                                </div>
+                            </li>
+
+                            <li class="cart-item active-input">
+                                <div class="count-price">
+
+                                    <input type="number" min="1" ng-model="item.amount" value="item.amount">
+
+                                </div>
+
+                            </li>
+                            <li class="cart-item active-cart">{{item.price}}$</li>
+                            <li class="cart-item active-cart">{{item.price * item.amount }}$</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="wd-haft s-full-width" ng-show="checkList">
+                    <div class="cart-no-product">
+                        <p>Not Product</p>
+                        <div class="icon-not-product"> <i class="fa-solid fa-ban"></i></div>
+
+                    </div>
+                </div>
+                <div class="wd-haft s-full-width">
+                    <div class="total-product">
+                        <ul class="total-product__list">
+                            <li class="total-product__head"><a href="" class="btn-continue btn " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" style="background-color: red;color: #fff;">
+                                    Checkout</a>
+
+                                <div class="head__total">For the best shopping experience, <a href="#!login"> Log in</a>
+                                </div>
+
+                            </li>
+
+                            <li class="total-product__item"><span class="suptotal">Suptotal : {{totalOrder()}}$</span>
+                            </li>
+                            <li class="total-product__item"><span>Shipping</span><span>Free</span></li>
+
+                            <li class="total-product__item"><span>Select delivery or pickup to view fees</span>
+                                <a>Select</a>
+                            </li>
+                            <li class="total-product__item"><span>Taxes</span><span>Calculated at checkout</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="cart-no-product">
+
+                        <a href="#!shop/shop" class="btn" style="background-color:rgb(2, 74, 46); color: #fff;">
+                            Continue
+                            Shopping</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">List price product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <ul class="total-product__list">
+                                <li class="total-product__item"><span class="suptotal-modal">Name Product :
+                                        {{nameProduct()}} </span>
+                                </li>
+                                <li class="total-product__item"><span class="suptotal-modal">Quantily :
+                                        {{quantily()}} </span>
+                                </li>
+                                <li class="total-product__item"><span class="suptotal-modal">Suptotal :
+                                        {{totalOrder()}}$</span>
+                                </li>
+                                <li class="total-product__item"><span>Shipping</span><span>Free</span></li>
+
+                                <li class="total-product__item"><span>Select delivery or pickup to view fees</span>
+                                    <a>Select</a>
+                                </li>
+                                <li class="total-product__item"><span>Taxes</span><span>Calculated at checkout</span>
+                                </li>
+
+                            </ul>
+                            <form id="modal-from">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Name:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Number Phone:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Shipping Address:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" class="btn btn-secondary"
+                                data-bs-dismiss="modal" ng-click="resetList()">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,125 @@
+<div class="container-product" ng-controller="productCtrl">
+    <div class="bg-shop"></div>
+
+    <div class="container max-width">
+        <div class="container-shop__conten">
+            <div class=" s-hiden  wd-for l-show">
+                <div class=" box-siderbar">
+                    <div class="container-sidebar">
+
+                        <div class="search">
+
+                            <ul class="list-search">
+                                <li class="item-search ">
+                                    <span class="span-title">Collection</span>
+                                    <ul class="product-list__type">
+                                        <li class="product-item__type">
+                                            <a class="product-link__type1" data-set="" ng-model="type" ng-click=""
+                                                value="">Indoor Plants <i class="fa fa-caret-down"></i></a>
+                                            <div class="dropdown-container">
+                                                <ul class="list-name_product" ng-hide="showProduct">
+                                                    <li class="item-name_product"> <a href="#">Pothos</a></li>
+                                                    <li class="item-name_product"><a href="#">Fern</a></li>
+
+
+
+                                                    <li class="item-name_product"> <a href="#">Ivy</a></li>
+
+                                                    <li class="item-name_product">
+                                                        <a href="#">Money Tree</a>
+                                                    </li>
+                                                    <li class="item-name_product"> <a href="#">Spider plants</a></li>
+                                                </ul>
+
+
+                                            </div>
+                                        </li>
+                                        <li class="product-item__type"><button class="product-link__type1" data-set=""
+                                                ng-click="" ng-model="type">Outdoor Plants</button>
+                                        </li>
+                                        <li class="product-item__type"><button class="product-link__type1" data-set=""
+                                                ng-click="" ng-model="type">Anywhere</button>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="item-search"><span class="span-title"> Price product</span>
+                                    <input type="range" min="0" max="100" oninput="rangevalue.value=value +'$'" />
+                                    <output id="rangevalue">50$</output>
+                                </li>
+                                <li class="item-search">
+                                    <span class="span-title">Name product</span>
+                                    <input type="text" placeholder="search name product" ng-model="name"
+                                        class="search-name">
+                                </li>
+                                <li class=" item-search">
+                                    <span class="span-title">Landscape Supplies</span>
+                                    <ul class="product-list__type">
+                                        <li class="product-item__type"><a href="" class="product-link__type" ng-model=""
+                                                ng-click="" data-set="">Fertilizer</a>
+                                        </li>
+                                        <li class="product-item__type"><a href="" class="product-link__type" ng-model=""
+                                                ng-click="" data-set="">Pot</a>
+                                        </li>
+                                        <li class="product-item__type"><a href="" class="product-link__type" ng-model=""
+                                                ng-click="" data-set="no">Shovel</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="box-touch">
+                                <form name="touch" id="form-touch">
+                                    <h3>Get in Touch</h3>
+                                    <div class="info">
+                                        <input type="text" class="info-name wd-full" required
+                                            placeholder="Enter your name" />
+                                        <input type="email" class="info-email wd-full" required
+                                            placeholder="Enter your email" />
+                                    </div>
+                                    <div class="info">
+
+                                        <input type="text" class="info-number wd-full " required
+                                            placeholder="Enter your number" />
+
+
+                                        <input type="text" class="info-subject  wd-full" required
+                                            placeholder="Enter your  subject" />
+
+                                    </div>
+                                    <div class="info">
+                                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <a type="submit" class="btn wd-full">Send message</a>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="wd-76">
+
+                <div class="products">
+                    <div class="card-product wd-thir" ng-repeat="item in dataProduct | myFilter:prop|rangePrice:
+                    {'toPrice':to_price,'fromPrice':from_price}| limitTo :pageSize:begin">
+                        <ul class=" card-list">
+                            <li class="card-item_img"><img src="{{item.img}}" alt="" class="card-img">
+                            </li>
+                            <li class="card-item">
+                                <h3>{{item.name}}</h3>
+                                <p> Price: ${{item.price}} </p>
+                            </li>
+                            <li class="card-item">{{item.brand}}</li>
+
+                            <li class="card-item"><a href="#!detail" class="card-link btn"
+                                    ng-click="saveData(item)">Detail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pagebar" class="numberbar">
+
+        </div>
+    </div>

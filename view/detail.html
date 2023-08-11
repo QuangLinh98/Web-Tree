@@ -1,0 +1,66 @@
+<div ng-controller="detailCtrl">
+    <div class="banner">
+
+        <img src="./images/546b10443c7eaf4a392113d6c7fcb6f2.jpg" alt="" class="baner-img">
+        <h1 class="baner-head">Our Products</h1>
+    </div>
+    <div class="container">
+
+        <div class="container-detail" ng-model="data">
+
+            <div class="detail_img wd-haft">
+                <img src="{{data.img}}" alt="">
+                <ul class="detail-list-titel">
+                    <li class="detail-item-titel">
+                        <h1>Product Details</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="detail-item-titel">
+                        <h1>Size & Measurements</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="detail-item-titel">
+                        <h1>Reviews</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="detail_list wd-haft">
+                <ul class="card-detail_list">
+                    <li class="card-detail_item">
+                        <h1>{{data.name}}</h1>
+                    </li>
+                    <li class="card-detail_item">{{data.brand}}</li>
+                    <li class="card-detail_item"> Price: {{data.price}} $</li>
+                    <li class="card-detail_item"> <a href="#!/cart" ng-click="setItemListCart(data)"
+                            class="card-detail_link"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a></li>
+                    <li class="card-detail_item"> <span>Avilable</span> <span>Shipping width 3-4 days</span></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="container-related">
+            <h1>Realated Products</h1>
+            <div class="products">
+                <div class="card-product wd-for" ng-repeat="item in listPresProduct |limitTo:8">
+                    <ul class="card-list">
+                        <li class="card-item_img"><img src="{{item.img}}" alt="" class="card-img">
+                        </li>
+                        <li class="card-item">
+                            <h3>{{item.name}}</h3>
+                            <p>Price: {{item.price}} $</p>
+                        </li>
+                        <li class="card-item">{{item.brand}}</li>
+
+                        <li class="card-item"><a href="#!/detail" class="card-link btn"
+                                ng-click="saveRealatedData(item)">Detail</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

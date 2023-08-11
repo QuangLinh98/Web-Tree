@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream 4k</title>
+    <!-- link bootrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://unpkg.com/@jsweb/font-awesome-base64/fa-all.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/respoinsive.css">
+
+    <!--   script  jquery  -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- script angular -->
+    <script type="application/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+
+
+    <!-- script bootrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script data-require="angular-ui-bootstrap@0.3.0" data-semver="0.3.0"
+        src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.3.0.min.js">
+        </script>
+
+</head>
+
+<body ng-app="myApp" onload="myFunction()" onunload="myUnFunction()">
+    <!-- header nav -->
+    <header class="header">
+        <div class="container">
+
+            <nav class="nav">
+                <div class="nav-log">
+
+
+                    <a href="#!"> <img src="./images/LOG.jpg" alt=""></a>
+                </div>
+                <div class="nav-body">
+
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#!" class="nav-link">Home</a></li>
+
+                        <li class="nav-item"><a href="#!shop/shop" class="nav-link">Shop</a></li>
+
+                        <li class="nav-item"><a href="#!about" class="nav-link">About</a></li>
+
+                        <li class="nav-item"><a href="#!review" class="nav-link">Feedback</a></li>
+
+                        <li class="nav-item"><a href="#!blog" class="nav-link">Blog</a></li>
+
+                        <li class="nav-item"><a href="#!contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-info">
+                    <ul class="info-list">
+                        <li class="info-item"><a href="" class="info-link"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li class="info-item"><a href="#!cart" class="info-link"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#!login" class="info-link"><i class="fa-solid fa-user"></i></a>
+                            <p id="count" class="info-online2">0</p>
+                        </li>
+                        <li class="info-item">
+                            <p><i class="fa-solid fa-earth-americas"></i></p>
+                            <p class="info-online" id="countNow">6</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div ng-view> </div>
+
+
+    <!--footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
+                    <a href="#!shop/shop"> <i class="fas fa-arrow-right"></i>Shop</a>
+                    <a href="#!about"> <i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#!review"> <i class="fas fa-arrow-right"></i>Feedback</a>
+                    <a href="#!blog"> <i class="fas fa-arrow-right"></i>Blog</a>
+                    <a href="#!contact"> <i class="fas fa-arrow-right"></i>Contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                    <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+                </div>
+
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>subscribe for latest update</p>
+                    <form action="">
+                        <input type="email" placeholder="enter your email address">
+                        <input type="submit" value="subscribe" class="btn">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <button class="blog-totop "><i class="fa-solid fa-angle-up"></i></button>
+        </div>
+    </footer>
+
+</body>
+<script>
+
+    var myApp = angular.module("myApp", ["ngRoute"]);
+    myApp.config(function ($routeProvider) {
+        $routeProvider
+            .when("/", {
+                templateUrl: "./view/home.html",
+            })
+            .when("/shop/:nameProduct", {
+                templateUrl: "./view/prouct.html",
+            })
+            .when("/contact", {
+                templateUrl: "./view/contact.html",
+            })
+            .when("/about", {
+                templateUrl: "./view/about.html",
+            })
+            .when("/detail", {
+                templateUrl: "./view/detail.html",
+            })
+            .when("/cart", {
+                templateUrl: "./view/cart.html",
+            })
+            .when("/contact", {
+                templateUrl: "./view/contact.html",
+            })
+            .when("/login", {
+                templateUrl: "./view/login.html",
+            })
+            .when("/blog", {
+                templateUrl: "./view/blog.html",
+            })
+            .when("/review", {
+                templateUrl: "./view/review.html",
+            });
+    });
+    myApp.run(function ($rootScope, $http) {
+        $http.get("./data/data.json").then(function (response) {
+            $rootScope.dataProduct = response.data.dataProduct;
+            console.log($rootScope.dataProduct);
+        });
+    });
+    // factory
+    myApp.factory("myService", function () {
+        var savedData = {};
+        var saveType = "";
+        var listCart = [];
+
+        // set data product
+        function set(data) {
+            savedData = data;
+        }
+        function get() {
+            return savedData;
+        }
+        myApp.config(['$provide', function ($provide) {
+            $provide.decorator('$templateRequest', ['$delegate', function ($delegate) {
+
+                var fn = $delegate;
+
+                $delegate = function (tpl) {
+
+                    for (var key in fn) {
+                        $delegate[key] = fn[key];
+                    }
+
+                    return fn.apply(this, [tpl, true]);
+                };
+
+                return $delegate;
+            }]);
+        }]);
+        // save type product
+        function setTypeProduct(type) {
+            saveType = type;
+        }
+        function getTypeproduct() {
+            return saveType;
+        }
+        // set list cart
+        function setListCart(item) {
+            let check = listCart.indexOf(item);
+            console.log(check);
+            if (check == -1) {
+                listCart.push(item);
+            }
+        }
+        // get list cart
+        function getListCart() {
+            return listCart;
+        }
+        // get quantyitem product
+        // reset list cart
+        function resetListCart() {
+            listCart.splice(0, listCart.length);
+        }
+        // delete product item cart
+        function deleteItemListCart(item) {
+            listCart.forEach((element, index) => {
+                if (element.id == item.id) {
+                    listCart.splice(index, 1);
+                }
+            });
+        }
+        return {
+            set: set,
+            get: get,
+            setTypeProduct: setTypeProduct,
+            getTypeproduct: getTypeproduct,
+            //  myservice list cart
+            setListCart: setListCart,
+            getListCart: getListCart,
+            deleteItemListCart: deleteItemListCart,
+            resetListCart: resetListCart,
+        };
+    });
+    myApp.filter("myFilter", function () {
+        return function (items, search) {
+            if (!search) {
+                return items;
+            }
+            var type = search;
+            if (!type || "shop" == type) {
+                return items;
+            }
+
+            if (search == "InDoor" || search == "Succulent" || search == "floweringShrubs") {
+                return items.filter(function (element, index) {
+                    console.log(search);
+                    return element.brand == search;
+                });
+            }
+
+            return items.filter(function (element, index) {
+                return element.type == search;
+            });
+        };
+    });
+
+    //Blog 
+    myApp.controller("blogCtrl", function ($scope, myService) {
+
+    })
+
+
+
+    // filte price
+    myApp.filter("rangePrice", function () {
+        return function (items, rangePrice) {
+            var filteredValue = [];
+            var toPrice =
+                rangePrice.toPrice != undefined ? parseInt(rangePrice.toPrice) : 1;
+            var fromPrice =
+                rangePrice.fromPrice != undefined ? parseInt(rangePrice.fromPrice) : 100;
+            angular.forEach(items, function (item) {
+                if (item.price >= toPrice) {
+                    filteredValue.push(item);
+                }
+            });
+            return filteredValue;
+        };
+    });
+    // controller home
+    myApp.controller("homeCtrl", function ($scope, myService) {
+        let fade = document.querySelectorAll(".fade");
+        $scope.prop = $routeParams.nameProduct;
+        //pagination product
+        $scope.begin = 0;
+        $scope.pageSize = 12;
+        $scope.pageCount = Math.ceil($scope.dataProduct.length / $scope.pageSize);
+
+        $scope.first = function () {
+            $scope.begin = 0;
+        };
+        $scope.previous = function () {
+            if ($scope.begin > 0) {
+                $scope.begin -= $scope.pageSize;
+            }
+        };
+        $scope.next = function () {
+            if ($scope.begin < ($scope.pageSize - 1) * $scope.pageSize) {
+                $scope.begin += $scope.pageSize;
+            }
+        };
+        $scope.last = function () {
+            $scope.begin = ($scope.pageSize - 1) * $scope.pageSize;
+        };
+        $scope.sortBy = function (prop) {
+            $scope.prop = prop;
+        };
+
+        // range input change background by price
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 200,
+            values: [1, 100],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            },
+        });
+        $("#amount").val(
+            "$" +
+            $("#slider-range").slider("values", 0) +
+            " - $" +
+            $("#slider-range").slider("values", 1)
+        );
+
+        $("#slider-range-shop").slider({
+            range: true,
+            min: 0,
+            max: 200,
+            values: [1, 100],
+            slide: function (event, ui) {
+                $("#amount-shop").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                $scope.to_price = ui.values[0];
+                $scope.from_price = ui.values[1];
+            },
+        });
+        $("#amount-shop").val(
+            "$" +
+            $("#slider-range-shop").slider("values", 0) +
+            " - $" +
+            $("#slider-range-shop").slider("values", 1)
+        );
+
+        // save item data  myservice
+        $scope.saveData = function (item) {
+            myService.set(item);
+        };
+
+        let index = 0;
+
+        $scope.next = function () {
+            fade[index].classList.remove("show");
+            index = (index + 1) % fade.length;
+            fade[index].classList.add("show");
+        };
+
+        $scope.prev = function () {
+            fade[index].classList.remove("show");
+            index = (index - 1 + fade.length) % fade.length;
+            fade[index].classList.add("show");
+        };
+        // save data to myService
+        $scope.saveData = function (data) {
+            myService.set(data);
+        };
+        // save item data  myservice
+        $scope.saveData = function (item) {
+            myService.set(item);
+        };
+        // save type to myserevice
+        $scope.saveType = function (type) {
+            myService.setTypeProduct(type);
+        };
+    });
+    myApp.controller("detailCtrl", function ($scope, myService) {
+
+
+
+        $scope.data = myService.get();
+
+        $scope.listPresProduct = []
+
+
+
+
+        $scope.dataProduct.forEach((element, index) => {
+            if (element.brand == $scope.data.brand) {
+                $scope.listPresProduct.push(element)
+
+                if (element.id === $scope.data.id) {
+                    $scope.listPresProduct.splice(index, 1)
+
+                }
+
+
+            }
+
+        });
+        // save item data  myservice
+        $scope.saveRealatedData = function (item) {
+            $scope.dataProduct.forEach((element, index) => {
+
+
+                if (element.id === item.id) {
+
+                    $scope.data = element
+                }
+
+            });
+        };
+        // set item list cart
+        $scope.setItemListCart = function (item) {
+            myService.setListCart(item);
+        };
+        console.log($scope.listPresProduct)
+    });
+    // product controller
+    myApp.controller("productCtrl", function ($scope, myService, $routeParams) {
+        $scope.prop = $routeParams.nameProduct;
+
+        // save item data  myservice
+        $scope.saveData = function (item) {
+            myService.set(item);
+        };
+
+        document.getElementById("form-touch").onclick = function (e) {
+            e.preventDefault();
+        }
+
+    })
+    // cart controlle
+    myApp.controller("cartCtrl", function ($scope, myService) {
+        // get list cart
+        let list = "";
+        list = myService.getListCart();
+        console.log(list);
+
+        list == ""
+            ? (($scope.checkout = false), ($scope.checkList = true))
+            : (($scope.checkout = true), ($scope.checkList = false));
+        // total order
+        $scope.totalOrder = function () {
+            var total = 0;
+            list.forEach((element) => {
+                total += element.price * element.amount;
+            });
+            return total;
+        };
+        // quantily order
+        $scope.quantily = function () {
+            var quantily = 0;
+            list.forEach((element, index) => {
+                if (element.amount > 0) {
+                    quantily += element.amount;
+                } else {
+                    quantily = 0;
+                }
+            });
+            return quantily;
+        };
+        //  order name producct
+        $scope.nameProduct = function () {
+            var listname = [];
+            list.forEach((element, index) => {
+                listname.push(element.name);
+            });
+            return listname.toString();
+        };
+        // remover item cart
+        $scope.removeItem = function (item) {
+            myService.deleteItemListCart(item);
+        };
+        //
+        $scope.listCart = list;
+
+        // reset list car and from
+        $scope.resetList = function () {
+            myService.resetListCart();
+            $("#modal-from").trigger("reset");
+            $scope.checkout = false;
+            $scope.checkList = true;
+        };
+        // set count
+        $scope.setCount = function (event, count) {
+            if (event == "+") {
+                count++
+            } else if (event == "-") {
+                $scope.count--
+            }
+            console.log(count)
+
+            return count
+        }
+    })
+
+    function myFunction() {
+        if (localStorage.getItem("count") == null) {
+            localStorage["count"] = 1
+        }
+        var cnt = parseInt(localStorage["count"])
+        cnt++;
+        localStorage["count"] = cnt;
+
+
+        if (localStorage.getItem("countNow") == null) {
+            localStorage["countNow"] = 0
+        }
+        var countNow = parseInt(localStorage["countNow"])
+        countNow++;
+        localStorage["countNow"] = countNow;
+
+
+        document.getElementById("countNow").innerHTML = countNow;
+        document.getElementById("count").innerHTML = cnt;
+    }
+    function myUnFunction() {
+        if (localStorage.getItem("countNow") != null) {
+
+            var countNow = parseInt(localStorage["countNow"])
+            countNow = countNow > 0 ? --countNow : 0;
+
+            localStorage["countNow"] = countNow;
+
+        }
+
+    }
+
+    //scroll to top
+    const button = document.querySelector("a");
+    const btn = document.querySelector("button");
+    const div = document.querySelector("div");
+    button.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+    });
+    btn.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+    });
+    button.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: `smooth`,
+        });
+    });
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: `smooth`,
+        });
+    });
+</script>
+
+</html>

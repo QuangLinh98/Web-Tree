@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --brown: #f7f3f1;
+    --green:	 #269900;
+    --btn:#49be25;
+    --color-list:#243ac3;
+}
+
+body {
+    background: var(--brown);
+    width: 100%;
+
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: var(--btn);
+    color: black;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    border: 0.1rem solid rgba(0, 0, 0, 0.7);
+}
+/* width colums*/
+.wd-full {
+    width: 100%;
+}
+
+.wd-haft {
+    width: 49%;
+}
+
+.wd-thir {
+    width: 32.3333%;
+}
+
+.wd-five {
+    width: 19%;
+}
+
+.wd-for {
+    width: 24%;
+}
+
+.wd-76 {
+    width: 76%;
+}
+
+/* box-shadow */
+.sadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+/* padding */
+.pd-8 {
+    padding: 8px 0;
+
+}
+
+.pd-16 {
+    padding: 16px 0;
+}
+
+.bd-bottom {
+    border-bottom: 1px solid #ccc;
+}
+/* input */
+input {
+    height: 4.9rem;
+    font-size: 1.4rem;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+select {
+    height: 4.9rem;
+    font-size: 1.4rem;
+    padding: 8px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 0 8px;
+    font-size: 1.4rem;
+    margin: 8px 0;
+}

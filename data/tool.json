@@ -1,0 +1,175 @@
+{
+    "tool":[
+        {
+            "id":1,
+            "brand":"fertilizer",
+            "name" : "Organic_goat_manure",
+            "img":"./images/Dung_Cu/de_huu_co.jpg",
+            "price":10
+
+        },
+
+        {
+            "id":2,
+            "brand":"fertilizer",
+            "name" : "Organic_bat_droppings",
+            "img":"./images/Dung_Cu/doi_huu_co.jpg",
+            "price":12
+
+        },
+
+        {
+            "id":3,
+            "brand":"fertilizer",
+            "name" : "Organic_chicken_manure",
+            "img":"./images/Dung_Cu/ga_huu_co.jpg",
+            "price":10
+
+        },
+        {
+            "id":4,
+            "brand":"fertilizer",
+            "name" : "japan_Organic_chicken_manure",
+            "img":"./images/Dung_Cu/ga_huu_co_nhat.jpg",
+            "price":15
+
+        },
+        {
+            "id":5,
+            "brand":"fertilizer",
+            "name" : "Microbiological_chicken_droppings",
+            "img":"./images/Dung_Cu/ga_vi_sinh.jpg",
+            "price":18
+
+        },
+        {
+            "id":6,
+            "brand":"fertilizer",
+            "name" : "Dam_phu_my",
+            "img":"./images/Dung_Cu/dam_phu_my.jpg",
+            "price":9
+
+        },
+        {
+            "id":7,
+            "brand":"fertilizer",
+            "name" : "Organic_cow_manure",
+            "img":"./images/Dung_Cu/bo_huu_co.jpg",
+            "price":17
+
+        },
+        {
+            "id":8,
+            "brand":"fertilizer",
+            "name" : "NPK",
+            "img":"/images/Dung_Cu/npk.jpg",
+            "price":8
+
+        },
+        {
+            "id":9,
+            "brand":"fertilizer",
+            "name" : "Trun_Que",
+            "img":"./images/Dung_Cu/trun_que.jpg",
+            "price":20
+
+        },
+        {
+            "id":10,
+            "brand":"fertilizer",
+            "name" : "Organic",
+            "img":"./images/Dung_Cu/huu_co.jpg",
+            "price" : 12
+
+        },
+        {
+            "id":11,
+            "name":"Bandaged",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/bang_quan.jpg",
+            "price": 3
+
+        },
+        {
+            "id":12,
+            "name":"Scratch",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/cao.jpg",
+            "price":2
+
+        },
+        {
+            "id":13,
+            "name":"Secateur",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/cat_canh.jpg",
+            "price":3
+
+        },
+        {
+            "id":14,
+            "name":"Saw",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/cua.jpg",
+            "price":4
+
+        },
+        {
+            "id":15,
+            "name":"Knife",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/dao.jpg",
+            "price":1
+
+        },
+        {
+            "id":16,
+            "name":"Bark_Shears",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/khoanh_vo.png",
+            "price":1.5
+
+        },
+        {
+            "id":17,
+            "name":"Pliers",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/kim_kep-cay.jpg",
+            "price":2
+
+        },
+        {
+            "id":18,
+            "name":"Tube",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/OngTrahat.jpg",
+            "price":3
+
+        },
+        {
+            "id":19,
+            "name":"Basket",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/thu_hoach.png",
+            "price":1
+
+        },
+        {
+            "id":20,
+            "name":"Shovel",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/Xeng.jpg",
+            "price":4
+
+        },
+        {
+            "id":21,
+            "name":"Sprinkler",
+            "brand":"tool",
+            "img":"./images/Dung_Cu/binh_phun_nuoc.jpg",
+            "price":1
+
+        }
+
+    ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body onload="myFunction()" onunload="myUnFunction()">
+
+    <h1>Welcome to my Home Page</h1>
+
+    <p>Close this window or press F5 to reload the page.</p>
+    <p><strong>Note:</strong> Due to different browser settings, this event may not always work as expected.</p>
+    <p>Counter :<span id="count"> </span></p>
+    <p>OnlineView :<span id="countNow"> </span></p>
+
+
+    <script>
+        var count = 1;
+
+        function myFunction() {
+            if (localStorage.getItem("count") == null) {
+                localStorage["count"] = 1
+            }
+            var cnt = parseInt(localStorage["count"])
+            cnt++;
+            localStorage["count"] = cnt;
+
+
+            if (localStorage.getItem("countNow") == null) {
+                localStorage["countNow"] = 0
+            }
+            var countNow = parseInt(localStorage["countNow"])
+            countNow++;
+            localStorage["countNow"] = countNow;
+
+
+            document.getElementById("countNow").innerHTML = countNow;
+            document.getElementById("count").innerHTML = cnt;
+        }
+        function myUnFunction() {
+            if (localStorage.getItem("countNow") != null) {
+
+                var countNow = parseInt(localStorage["countNow"])
+                countNow--;
+                localStorage["countNow"] = countNow;
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
